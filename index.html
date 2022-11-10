@@ -4,33 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zlgiza</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="map.js"></script>
-  <ul class="menu" style="display:inline-block">
-    <a href="index.html"><img src="images/logo.jpg" width="90"></a> 
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styleindex.css">
+  <div class="container">
+    <header class="blog-header lh-1 py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="link-secondary" href="#">Subscribe</a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="link-secondary" href="#" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+          </a>
+          <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+        </div>
+      </div>
+  <center><a href="index.html"><img src="images/logo.jpg" width="150"></a></center>
+  <ul class="menu">
     <li>
-      <a href="#"><center><img src="images/user.png" width="35" style="vertical-align: middle;"></center></a>
+      <a href="#">MY</a>
       <ul class="submenu">
-        <li><a href="#">MY</a></li>
-        <li><a href="#">submenu02</a></li>
-        <li><a href="#">submenu03</a></li>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">내정보</a></li>
         <li><a href="#">submenu04</a></li>
         <li><a href="#">submenu05</a></li>
       </ul>
     </li>
     <li>
-      <a><center><img src="images/map-marker.png" width="35" style="vertical-align: middle;"></center></a>
+      <a href="#">축제정보</a>
       <ul class="submenu">
         <li><a href="list.html">지역축제</a></li>
+        <li><a href="map.html">축제지도</a></li>
         <li><a href="#">축제일정</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제커뮤니티</a>
+      <ul class="submenu">
+        <li><a href="#">게시판</a></li>
+        <li><a href="#">submenu02</a></li>
         <li><a href="#">submenu03</a></li>
         <li><a href="#">submenu04</a></li>
         <li><a href="#">submenu05</a></li>
       </ul>
     </li>
     <li>
-      <a href="#"><center><img src="images/bookmark.png" width="35" style="vertical-align: middle;"></center></a>
+      <a href="#">축제마케팅</a>
       <ul class="submenu">
         <li><a href="#">submenu01</a></li>
         <li><a href="#">submenu02</a></li>
@@ -40,17 +63,7 @@
       </ul>
     </li>
     <li>
-      <a href="#"><center><img src="images/heart.png" width="35" style="vertical-align: middle;"></center></a>
-      <ul class="submenu">
-        <li><a href="#">submenu01</a></li>
-        <li><a href="#">submenu02</a></li>
-        <li><a href="#">submenu03</a></li>
-        <li><a href="#">submenu04</a></li>
-        <li><a href="#">submenu05</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#"><center><img src="images/exit.png" width="35" style="vertical-align: middle;"></center></a>
+      <a href="#">MENU5</a>
       <ul class="submenu">
         <li><a href="#">submenu01</a></li>
         <li><a href="#">submenu02</a></li>
@@ -62,38 +75,92 @@
   </ul>
 </head>
 <body>
-  <dl style="display:inline-block">
-    <section>
-      <from action="http://www.google.com/search" method="GET">
-        <h1 class="search">
-          <input type="text" placeholder="검색어 입력">
-          <button>검색</button>
-        </h1>
-      </from>
-    </section>
-    <h2 class="line">축제 일정</h2>
-    <dt class="no-scroll" style="overflow:scroll; width:580px; height:850px;">
-      <center><img src="images/무중력영화제.png" width="400" alt="무중력 영화제 그림"></center>
-      <center><img src="images/청년의날.png" width="400" alt="청년의날 그림"></center>
-      <center><img src="images/김포평화누리길.jpg" width="400" alt="김포평화누리길"></center>
-    </dt>
-  </dl>
-  <fieldset>
-    <div class="map_wrap">
-      <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div> 
-      <!-- 지도타입 컨트롤 div 입니다 -->
-      <div class="custom_typecontrol radius_border">
-          <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
-          <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <div class="container">
+    <div class="p-5 p-md-5 mb-4 shadow-sm">
+      <div class="col-md-6 px-4">
+        <h1 class="display-5 fst-italic ">즐기자는 지역축제일정과 정보서비스를 제공합니다.</h1>
+        <p class="lead my-4">We provide local festival information and scheduling services. enjoy!</p>
+        <p class="lead mb-0"><a href="#" class="text-black fw-bold">Continue reading...</a></p>
       </div>
-      <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
-      <div class="custom_zoomcontrol radius_border"> 
-          <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
-          <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
-      </div>
+    </div>
+    <div style="display:inline-block">
+    <ul class="list">
+      <li>
+        <a href="f1.html"><img class="img" src="images/kdf.jpg" art="코리아드라마페스티벌"></a>
+        <div class="text">
+          <p class="title"><strong>코리아드라마페스티벌</strong></p>
+          <div class="ny">한류라는 단어가 본격적으로 세(勢)를 얻기 시작한지 어느덧 18년이 지났다. 강산이 변한다는 시간동안 한류는 꾸준히 변화의 흐름을 만들어 왔다.
+            드라마, 영화, 음반, 뮤지컬에 이르기까지 한류에 의해 파생된 문화 컨텐츠 수출은 매년 증가되고 있다.
+            따라서 한류의 부가가치를 높이기 위한 장기전략 차원에서 드라마를 컨텐츠로 한 코리아 드라마 페스티벌은 이제 천년의 멋과 여유가 살아 숨쉬는 역사와 전통의 고장 진주에서 신新 한류문화의 불빛을 밝힌다.</div>
+          <ul class="detail_info">
+            <li>기간 : 2022.10.08. ~ 11.3.</li>
+            <li>장소 : 경상남도 진주시</li>
+            <li>문의 : 055-755-2363</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="list">
+      <li href="#">
+        <img class="img" src="images/nanopia.jpg"art="나노피아">
+        <div class="text">
+          <p class="title"><strong>제9회 나노융합 산업전(NANOPIA 2022)</strong></p>
+          <div class="ny">대한민국 나노산업의 새로운 탄생 The Reborn of Korea Nano Industry
+            대한민국 나노융합산업의 현주소를 만날 수 있는 제9회 나노융합산업전은 기업 및 국민 참여형 행사로 진행된다.
+            밀양아리랑아트센터에서 양일간 진행되는 축제에는 중소 중견기업 대상으로 실질적인 비즈니스의 장을 마련하여 기업 역량 강화 및 대외 경쟁력 강화를 위한 기반을 마련하는 교류의 장이 열린다.
+            제9회 나노융합산업전은 국내외 나노융합산업계의 신기술 및 산업 동향 공유를 통한 나노융합산업의 트렌드 및 전략 공유의 장이 될 예정이다.
+            축제 당일 밀양아리랑아트센터 대공연장에서는 밀양문화관광재단과 연계하여 다양한 볼거리를 제공하고, 스토어팜 존 및 다채로운 전시와 체험을 진행한다.
+            
+            ※ 11월 3일에 예정되어 있던 공연은 취소되었습니다.</div>
+          <ul class="detail_info">
+            <li>기간 : 2022. 11. 3. ~ 4.</li>
+            <li>장소 : 경상남도 밀양시</li>
+            <li>문의 : 02-907-4861</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="list">
+      <li href="#">
+        <img class="img" src="images/gmf.jpg" art="경기마을미디어축제">
+        <div class="text">
+          <p class="title"><strong>제4회 경기마을미디어축제</strong></p>
+          <div class="ny">※ 해당 축제는 축소 개최로 전환됩니다. 공모전 수상자 발표와 세미나 및 강연 프로그램만 녹화 진행되며 녹화 영상은 추후 경기마을미디어 유튜브 채널에 업로드 됩니다. 
+
+            2022년 11월 4일 금요일에 진행되는 제4회 경기마을미디어축제는 2년 만에 오프라인으로 개최된다. 장소는 경기도 광명 아이벡스 스튜디오 5층 하이퍼홀에서 진행된다.
+            사전행사로는 마을미디어 제작자의 해설과 함께하는 콘텐츠를 감상할 수 있고, 본 행사에서는 경기마을미디어 공모전을 참여한 우수활동가, 신인활동가, 우수 콘텐츠 부문 시상이 진행된다.
+            현장의 참석자들이 함께 할 수 있는 실시간 이벤트도 진행 예정이다. 제4회 경기마을미디어축제는 경기마을미디어축제 유튜브 채널을 통해서 누구나 라이브로 시청할 수 있다.
+            경기도 마을미디어 활동가들의 활동성과를 공유하고 마을미디어 활성화를 도모하는 마을미디어 관계자 모두의 축제이다.
+            경기마을 미디어측제에서는 우리 마을의 이야기를 나눌 수 있고, 우리 이웃의 이야기를 전한다.
+            부천, 고양, 군포, 성남, 수원, 의정부, 화성 7개 마을의 살아있는 이야기로 소통하는 경기마을 미디어 축제에 당신을 초대한다.</div>
+          <ul class="detail_info">
+            <li>기간 : 2022. 11. 4. / 13:00~18:30</li>
+            <li>장소 : 경기도 남양주시</li>
+            <li>문의 : 02-561-3125</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
   </div>
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=840029f076ed419d150b9eae97a4d6d2"></script>
-  <script src="map.js"></script>
-  </fieldset>
+    <div class="slider" style="display:inline-block">
+      <input type="radio" name="slide" id="slide1" checked>
+      <input type="radio" name="slide" id="slide2">
+      <input type="radio" name="slide" id="slide3">
+      <input type="radio" name="slide" id="slide4">
+      <ul id="imgholder" class="imgs">
+            <li><img src="images/김포평화누리길.jpg"></li>
+            <li><img src="images/무중력영화제.png"></li>
+            <li><img src="images/청년의날.png"></li>
+      </ul>
+        <div class="bullets">
+            <label for="slide1">&nbsp;</label>
+            <label for="slide2">&nbsp;</label>
+            <label for="slide3">&nbsp;</label>
+        </div>
+    </div>
 </body>
 </html>

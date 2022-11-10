@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zlgiza</title>
+  <link rel="stylesheet" href="stylemap.css">
+  <script src="map.js"></script>
+  <ul class="menu" style="display:inline-block">
+    <a href="index.html"><img src="images/logo.jpg" width="90"></a> 
+    <li>
+      <a href="#"><center><img src="images/user.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">MY</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a><center><img src="images/map-marker.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="list.html">지역축제</a></li>
+        <li><a href="#">축제일정</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><center><img src="images/bookmark.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><center><img src="images/heart.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><center><img src="images/exit.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+  </ul>
+</head>
+<body>
+  <dl style="display:inline-block">
+    <section>
+      <from action="http://www.google.com/search" method="GET">
+        <h1 class="search">
+          <input type="text" placeholder="검색어 입력">
+          <button>검색</button>
+        </h1>
+      </from>
+    </section>
+    <h2 class="line">축제 일정</h2>
+    <dt class="no-scroll" style="overflow:scroll; width:580px; height:850px;">
+      <center><img src="images/무중력영화제.png" width="400" alt="무중력 영화제 그림"></center>
+      <center><img src="images/청년의날.png" width="400" alt="청년의날 그림"></center>
+      <center><img src="images/김포평화누리길.jpg" width="400" alt="김포평화누리길"></center>
+    </dt>
+  </dl>
+  <fieldset>
+    <div class="map_wrap">
+      <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div> 
+      <!-- 지도타입 컨트롤 div 입니다 -->
+      <div class="custom_typecontrol radius_border">
+          <span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+          <span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+      </div>
+      <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+      <div class="custom_zoomcontrol radius_border"> 
+          <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png" alt="확대"></span>  
+          <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png" alt="축소"></span>
+      </div>
+  </div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=840029f076ed419d150b9eae97a4d6d2"></script>
+  <script src="map.js"></script>
+  </fieldset>
+</body>
+</html>
