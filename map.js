@@ -76,6 +76,7 @@ var infowindow = new kakao.maps.InfoWindow({
   
 // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
 infowindow.open(map, marker);
+
 // 마커가 표시될 위치입니다 
 var markerPosition  = new kakao.maps.LatLng(34.9548461, 127.4824741); 
 
@@ -89,6 +90,98 @@ marker.setMap(map);
 
 var iwContent = '<div style="padding:5px;">문화인 쌀롱데이 <br><a href="https://map.kakao.com/link/map/문화인쌀롱데이,34.9548461,127.4824741" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/문화인쌀롱데이,34.9548461,127.4824741" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
     iwPosition = new kakao.maps.LatLng(34.9548461, 127.4824741); //인포윈도우 표시 위치입니다
+
+// 인포윈도우를 생성합니다
+var infowindow = new kakao.maps.InfoWindow({
+    position : iwPosition, 
+    content : iwContent 
+});
+  
+// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+infowindow.open(map, marker); 
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.5765072, 127.0015243); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+var iwContent = '<div style="padding:5px;">제12회 서울미래연극제 <br><a href="https://map.kakao.com/link/map/제12회서울미래연극제,37.5765072,127.0015243 style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/제12회서울미래연극제,37.5765072,127.0015243" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    iwPosition = new kakao.maps.LatLng(37.5765072, 127.0015243); //인포윈도우 표시 위치입니다
+
+// 인포윈도우를 생성합니다
+var infowindow = new kakao.maps.InfoWindow({
+    position : iwPosition, 
+    content : iwContent 
+});
+  
+// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+infowindow.open(map, marker);
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(35.5030682, 128.761216); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+var iwContent = '<div style="padding:5px;">외계인 대축제 <br><a href="https://map.kakao.com/link/map/외계인대축제,35.5030682,128.761216" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/외계인대축제,35.5030682,128.761216" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    iwPosition = new kakao.maps.LatLng(35.5030682, 128.761216); //인포윈도우 표시 위치입니다
+
+// 인포윈도우를 생성합니다
+var infowindow = new kakao.maps.InfoWindow({
+    position : iwPosition, 
+    content : iwContent 
+});
+  
+// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+infowindow.open(map, marker); 
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(35.0912316, 129.0681448); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+var iwContent = '<div style="padding:5px;">별바다부산 나이트페스타 <br><a href="https://map.kakao.com/link/map/별바다부산나이트페스타,35.0912316,129.0681448" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/별바다부산나이트페스타,35.0912316,129.0681448" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    iwPosition = new kakao.maps.LatLng(35.0912316, 129.0681448); //인포윈도우 표시 위치입니다
+
+// 인포윈도우를 생성합니다
+var infowindow = new kakao.maps.InfoWindow({
+    position : iwPosition, 
+    content : iwContent 
+});
+  
+// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+infowindow.open(map, marker); 
+
+// 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.3409994, 127.2911455); 
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+var iwContent = '<div style="padding:5px;">화담숲 가을단풍축제 <br><a href="https://map.kakao.com/link/map/화담숲가을단풍축제,37.3409994,127.2911455" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/화담숲가을단풍축제,37.3409994,127.2911455" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    iwPosition = new kakao.maps.LatLng(37.3409994, 127.2911455); //인포윈도우 표시 위치입니다
 
 // 인포윈도우를 생성합니다
 var infowindow = new kakao.maps.InfoWindow({
