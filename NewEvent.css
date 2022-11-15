@@ -92,28 +92,6 @@ h1{
   float: left;
 }
 
- /* 푸터 */
- .wrap{
-  min-height: 100%;
-  position: relative;
-}
-
-footer {
-  position: absolute;
-  top: 100%;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-  height: 76px;
-  background-color:rgb(247, 146, 89);
-  color: white;
-  margin-top: 3%;
-}
-
-footer p{
-  padding: 27px 0;
-  font-size: 14px;
-}
 
 /* 모바일 */
 @media (max-width: 991.98px){
@@ -121,15 +99,6 @@ footer p{
     position: relative;
     bottom: 45px;
     margin: auto;
-  }
-
-  .under-nav .nav{
-    width: 90%;
-  }
-
-  .nav .nav-item{
-    margin: auto;
-    padding: 0%;
   }
 
   #newboard_area{
@@ -154,11 +123,4 @@ footer p{
     font-size: 3vw;
   }
 
-  footer{
-    height: 70px;
-  }
-
-  footer p{
-    padding: 14px;
-  }
 } 
