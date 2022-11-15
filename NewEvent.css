@@ -92,27 +92,15 @@ h1{
   float: left;
 }
 
- /* 푸터 */
- .wrap{
-  min-height: 100%;
-  position: relative;
-}
-
-footer {
-  position: absolute;
-  top: 100%;
-  bottom: 0;
+a.jcm-top {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
   text-align: center;
-  width: 100%;
-  height: 76px;
-  background-color:rgb(247, 146, 89);
-  color: white;
-  margin-top: 3%;
-}
-
-footer p{
-  padding: 27px 0;
-  font-size: 14px;
+  width: 4%;
+  height: 5%;
+  z-index: 999;
+  display: none; 
 }
 
 /* 모바일 */
