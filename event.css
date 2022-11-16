@@ -120,22 +120,14 @@ a{text-decoration:none;font-size:14px}
     z-index: 999;
     display: none; 
   }
-  /* 모바일 */
+ /* 모바일 */
   @media (max-width: 991.98px){
     .container-fluid{
       position: relative;
       bottom: 45px;
       margin: auto;
     }
-  
-    .under-nav .nav{
-      width: 90%;
-    }
-  
-    .nav .nav-item{
-      margin: auto;
-      padding: 0%;
-    }
+
   
     #board_area{
       width: 100%;
@@ -151,21 +143,12 @@ a{text-decoration:none;font-size:14px}
       font-size: 3vw;
     }
   
-    footer{
-      height: 70px;
-    }
-  
-    footer p{
-      padding: 14px;
-    }
+
   } 
   
   @media (min-width: 2550px){
     #board_area{
       height: 725px;
     }
-    footer{
-      position: absolute;
-      bottom: 0;
-    }
+
   }
