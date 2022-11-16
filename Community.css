@@ -1,0 +1,171 @@
+*{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:14px}
+.menu {
+  width: 1200px;
+  overflow: hidden;
+  margin: 50px auto;}
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;}
+.menu a {
+  color: #fff;}
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;}
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;}
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;}
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;}
+  .list{
+    width:750px;
+    margin-left:0px;
+    margin-top:0px;
+    border-bottom: 1px solid #BBB9B9;
+  }
+  @font-face {
+    src: url("./font/HancomMalangMalang-Regular.ttf");
+    font-family: "Malang-Regular";
+  }
+  @font-face {
+    font-family: 'BBTreeGR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* 게시판 */
+  #board_area {
+    width: 90%;
+    height: 700px;
+    margin: auto;
+    font-family: 'BBTreeGR';
+  }
+  
+  /* 시작 */
+  section{
+    margin: 0 7%;
+  }
+  
+  #pedia-what{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  h1{
+    font-size: 1.7vw;
+    font-weight: bold;
+    padding-bottom: 7px;
+  }
+  
+  #pedia-what p{
+    font-size: 1.3vw;
+  }
+  /* 끝 */
+  
+  .list-table {
+    width: 100%;
+    height: 500px;
+    background-color: #f0f8f8;
+    width: 100%;
+  }
+  .list-table thead th{
+      height:40px;
+      border-bottom:1px solid #CCC;
+      font-weight: bold;
+      font-size: 17px;
+    text-align: center;
+  }
+  .list-table thead .title{
+    text-decoration: none;
+    color: #363537;
+  }
+  .list-table tbody td{
+      text-align:center;
+      padding:10px 0;
+      border-bottom:1px solid #CCC; 
+    height:20px;
+      font-size: 14px 
+  }
+  #write_btn {
+      position: absolute;
+      margin-top:15px;
+      right: 14%;
+  }
+  #write_btn button{
+    background-color: #f0f8f8;
+    color: #363537;
+    border-radius: 10%;
+    border-width: 1px;
+    padding: 5px;
+  }
+  
+  a.jcm-top {
+    position: fixed;
+    right: 1%;
+    bottom: 5%;
+    text-align: center;
+    width: 4%;
+    height: 5%;
+    z-index: 999;
+    display: none; 
+  }
+  /* 모바일 */
+  @media (max-width: 991.98px){
+    .container-fluid{
+      position: relative;
+      bottom: 45px;
+      margin: auto;
+    }
+  
+    .under-nav .nav{
+      width: 90%;
+    }
+  
+    .nav .nav-item{
+      margin: auto;
+      padding: 0%;
+    }
+  
+    #board_area{
+      width: 100%;
+    }
+  
+    h1{
+      font-size: 4vw;
+      font-weight: bold;
+      padding-bottom: 7px;
+    }
+  
+    #pedia-what p{
+      font-size: 3vw;
+    }
+  
+    footer{
+      height: 70px;
+    }
+  
+    footer p{
+      padding: 14px;
+    }
+  } 
+  
+  @media (min-width: 2550px){
+    #board_area{
+      height: 725px;
+    }
+    footer{
+      position: absolute;
+      bottom: 0;
+    }
+  }
