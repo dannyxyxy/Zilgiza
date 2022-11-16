@@ -66,3 +66,18 @@ a{text-decoration:none;font-size:14px}
 .no-scroll::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+@font-face {
+  src: url("./font/HancomMalangMalang-Regular.ttf");
+  font-family: "Malang-Regular";
+}
+@font-face {
+  font-family: 'BBTreeGR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+#wrap{
+  min-height:0;
+  position: relative;
+  width:100%;
+}
