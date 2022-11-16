@@ -86,8 +86,8 @@
 
       <section id="pedia-what">
         <div class="container">
-          <h1>축제 홍보</h1>
-            <p>축제 정보를 공유해주세요.</p>
+          <h1>자유게시판</h1>
+            <p>자유로운 글을 함께 나눠요.</p>
         </div>
       </section>
 
@@ -101,7 +101,7 @@
               <li><a class="dropdown-item" href="">축제 홍보</a></li>
               <li><a class="dropdown-item" href="">축제 리뷰</a></li>
             </ul>
-            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="축제 홍보">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="자유게시판">
           </div>
 
           <div class="input-title mb-3">
@@ -117,7 +117,7 @@
             <div class="form-floating">
               <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                 style="height: 320px"></textarea>
-              <label for="floatingTextarea2">내용을 입력하세요. ex) 축제 이름 / 기간 / 장소 / 주최 / 주관 / 문의전화/ 공식사이트 / 소개</label>
+              <label for="floatingTextarea2">내용을 입력하세요. </label>
             </div>
             <div class="input-group mb-3">
               <input type="file" class="form-control" id="inputGroupFile02">
@@ -125,7 +125,7 @@
 
               <button style="border-radius: 10px; margin: 1px;" type="button" onclick="submit_event(); return 0;"
                 class="btn btn-light col-3">
-                <a href="./Event.html" style=" text-decoration:none; color: black;" );>제출</a>
+                <a href="./Community.html" style=" text-decoration:none; color: black;" );>제출</a>
               </button>
             </div>
           </div>
@@ -141,7 +141,7 @@
     var result = confirm("작성한 글을 게시하시겠습니까?");
     if(result){
         alert("게시하였습니다.");
-        location.href="./Event.html";
+        location.href="./Community.html";
     }else{
         alert("취소하였습니다.");
     }

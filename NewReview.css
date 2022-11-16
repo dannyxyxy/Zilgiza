@@ -1,0 +1,145 @@
+*{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:14px}
+.menu {
+  width: 1200px;
+  overflow: hidden;
+  margin: 50px auto;}
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;}
+.menu a {
+  color: #fff;}
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;}
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;}
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;}
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;}
+  .list{
+    width:750px;
+    margin-left:0px;
+    margin-top:0px;
+    border-bottom: 1px solid #BBB9B9;
+  }
+  
+  @font-face {
+    src: url("./font/HancomMalangMalang-Regular.ttf");
+    font-family: "Malang-Regular";
+  }
+  @font-face {
+    font-family: 'BBTreeGR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* 글 작성 */
+#newboard_area{
+  width: 90%;
+  height: 800px;
+  margin: auto;
+  font-family: 'BBTreeGR';
+}
+
+/* 시작 */
+section{
+  margin: 0 7%;
+}
+
+#pedia-what{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+  margin: auto;
+}
+
+h1{
+  font-size: 1.7vw;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+#pedia-what p{
+  font-size: 1.3vw;
+}
+/* 끝 */
+
+#newboard_area .container_board{
+  background-color: #f0f8f8;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 1em;
+}
+#newboard_area .container_board #board{
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+
+
+#newboard_area #profile_pt{
+  float: left;
+}
+
+a.jcm-top {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  text-align: center;
+  width: 4%;
+  height: 5%;
+  z-index: 999;
+  display: none; 
+}
+
+/* 모바일 */
+@media (max-width: 991.98px){
+  .container-fluid{
+    position: relative;
+    bottom: 45px;
+    margin: auto;
+  }
+
+  .menu{
+    margin: auto;
+    padding: 0%;
+    width: auto;
+  }
+
+  #newboard_area{
+    width: 100%;
+  }
+
+  #newboard_area .container_board{
+    width: 100%;
+  }
+
+  #newboard_area .container_board #board{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 4vw;
+    font-weight: bold;
+    padding-bottom: 7px;
+  }
+
+  #pedia-what p{
+    font-size: 3vw;
+  }
+
+#floatingTextarea2 .label{
+  font-size: 5px;
+}
+} 
