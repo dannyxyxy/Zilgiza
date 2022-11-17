@@ -17,7 +17,7 @@
           <a class="link-secondary" href="#">Subscribe</a>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
-          <a class="link-secondary" href="#" aria-label="Search">
+          <a class="link-secondary" href="list.html" aria-label="Search">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
           </a>
           <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
@@ -31,8 +31,6 @@
         <li><a href="#">로그인</a></li>
         <li><a href="#">회원가입</a></li>
         <li><a href="#">내정보</a></li>
-        <li><a href="#">submenu04</a></li>
-        <li><a href="#">submenu05</a></li>
       </ul>
     </li>
     <li>
@@ -41,8 +39,6 @@
         <li><a href="list.html">지역축제</a></li>
         <li><a href="map.html">축제지도</a></li>
         <li><a href="calendar.html">축제일정</a></li>
-        <li><a href="#">submenu04</a></li>
-        <li><a href="#">submenu05</a></li>
       </ul>
     </li>
     <li>
@@ -51,15 +47,14 @@
         <li><a href="Community.html">자유게시판</a></li>
         <li><a href="Event.html">축제 홍보</a></li>
         <li><a href="Review.html">축제 리뷰</a></li>
-        <li><a href="Notice.html">공지사항</a></li>
-        <li><a href="#">submenu05</a></li>
+        <li><a href="#">공지사항</a></li>
       </ul>
     </li>
     <li>
       <a href="#">축제마케팅</a>
       <ul class="submenu">
-        <li><a href="#">축제뉴스</a></li>
-        <li><a href="#">인터뷰</a></li>
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
         <li><a href="#">submenu03</a></li>
         <li><a href="#">submenu04</a></li>
         <li><a href="#">submenu05</a></li>
@@ -79,15 +74,26 @@
 </head>
 <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <div class="container">
-    <div class="p-5 p-md-5 mb-4 shadow-sm">
-      <img src="images/main.jpg" width="400" style="float:right;">
-      <div class="col-md-7 px-4">
-        <h1 class="display-5 fst-italic ">즐기자는 지역축제일정과<br/> 정보서비스를 제공합니다.</h1>
-        <p class="lead my-4">We provide local festival information and scheduling services. enjoy!</p>
-        <p class="lead mb-0"><a href="#" class="text-black fw-bold">Continue reading...</a></p>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/main1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/main1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/main1.png" class="d-block w-100" alt="...">
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
     <div style="display:inline-block">
     <ul class="list">
@@ -95,12 +101,14 @@
         <h2 class="line">지역 축제</h2>
         <a href="f1.html"><img class="img" src="images/kdf.jpg" art="코리아드라마페스티벌"></a>
         <div class="text">
-          <p class="title"><strong>2022 별빛내린천 신사리상권 릴레이 이벤트</strong></p>
-          <div class="ny">별빛내린천 신사리 상권 릴레이 이벤트는 코로나19로 인해 위축된 지역문화 예술인이 각자의 예술 활동을 자유롭게 펼칠 수 있는 무대를 제공하고 관객들과 만나 함께 교류 할 수 있는 장을 제공한다.</div>
+          <p class="title"><strong>코리아드라마페스티벌</strong></p>
+          <div class="ny">한류라는 단어가 본격적으로 세(勢)를 얻기 시작한지 어느덧 18년이 지났다. 강산이 변한다는 시간동안 한류는 꾸준히 변화의 흐름을 만들어 왔다.
+            드라마, 영화, 음반, 뮤지컬에 이르기까지 한류에 의해 파생된 문화 컨텐츠 수출은 매년 증가되고 있다.
+            따라서 한류의 부가가치를 높이기 위한 장기전략 차원에서 드라마를 컨텐츠로 한 코리아 드라마 페스티벌은 이제 천년의 멋과 여유가 살아 숨쉬는 역사와 전통의 고장 진주에서 신新 한류문화의 불빛을 밝힌다.</div>
           <ul class="detail_info">
-            <li>기간 : 2022. 9. 23. ~ 2023. 1. 14.</li>
-            <li>장소 : 별빛내린천 수변무대</li>
-            <li>문의 : 02-554-9795</li>
+            <li>기간 : 2022.10.08. ~ 11.3.</li>
+            <li>장소 : 경상남도 진주시</li>
+            <li>문의 : 055-755-2363</li>
             <P></P>
           </ul>
         </div>
@@ -150,25 +158,24 @@
       </li>
     </ul>
   </div>
-    <dt class="no-scroll" style="overflow:scroll; width:500px; height:790px; display:inline-block;">
-      <h2 class="line">축제 정보</h2>
-      <center><img src="images/무중력영화제.png" width="400" alt="무중력 영화제 그림"></center>
-      <center><img src="images/청년의날.png" width="400" alt="청년의날 그림"></center>
-      <center><img src="images/김포평화누리길.jpg" width="400" alt="김포평화누리길"></center>
-    </dt>
+  <dt class="no-scroll" style="overflow:scroll; width:500px; height:790px; display:inline-block;">
+    <h2 class="line">축제 정보</h2>
+    <center><img src="images/무중력영화제.png" width="400" alt="무중력 영화제 그림"></center>
+    <center><img src="images/청년의날.png" width="400" alt="청년의날 그림"></center>
+    <center><img src="images/김포평화누리길.jpg" width="400" alt="김포평화누리길"></center>
+  </dt>
     <div id="wrap">
       <section>
 
       </section>
       <footer>
         <nav>
-          <a href="">Blog</a> |
-          <a href="">Github</a>
+          <a href="https://github.com/dannyxyxy/Zilgiza">Github</a>
         </nav>
         <p>
-          <span>저자 : danny</span><br/>
+          <span>저자 : Joongbu univ. Project Team Zilgiza</span><br/>
           <span>이메일 : danny97k@naver.com</span><br/>
-          <span>Copyright 2022. danny. All Rights Reserved.</span>
+          <span>Copyright 2022. Zilgiza. All Rights Reserved.</span>
         </p>
       </footer>
     </div>

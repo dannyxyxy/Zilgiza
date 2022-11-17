@@ -1,10 +1,11 @@
+
 *{padding:0;margin:0}
 li{list-style:none}
 a{text-decoration:none;font-size:14px}
 .menu {
   width: 90%;
   overflow: hidden;
-  margin: 50px auto;}
+  margin: 30px auto;}
 .menu > li {
   width: 20%; /*20*5=100%*/
   float: left;
@@ -31,6 +32,11 @@ a{text-decoration:none;font-size:14px}
     margin-top:0px;
     border-bottom: 1px solid #BBB9B9;
   }
+#carouselExampleControls{
+  width:90%;
+  height: 300px;
+  margin:auto;
+}
 .img {float:left;display:block;width:29.67%;max-width:328px;height:200px;padding-left:28px;box-sizing:border-box;-webkit-box-sizing:border-box;overflow:hidden;}
 .text {display:inline-block;width:70.33%;max-width:872px;padding-left:25px;box-sizing:border-box;-webkit-box-sizing:border-box;}
 .text .title {padding-bottom:20px;color:#222;font-size:22px;font-weight:500;line-height:1.5em;letter-spacing:-1px;}
