@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zlgiza</title>
+  <ul class="menu" style="display:inline-block">
+    <a href="index.html"><img src="logo.jpg" width="90"></a> 
+    <li>
+      <a href="#"><center><img src="user1.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">MY</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a><center><img src="map-marker.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="list.html">지역축제</a></li>
+        <li><a href="#">축제일정</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><center><img src="bookmark.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><center><img src="heart.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><center><img src="exit.png" width="35" style="vertical-align: middle;"></center></a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+  </ul>
+</head>
+<body>
+  <dl style="display:inline-block">
+    <section>
+      <from action="http://www.google.com/search" method="GET"> 
+        <h1 class="search">
+          <input type="text" placeholder="검색어 입력">
+          
+        </h1>
+      </from>
+    </section>
+    <style>
+      *{padding:0;margin:0}
+  li{list-style:none}
+  a{text-decoration:none;font-size:14px}
+  .menu {
+    width: 90px;
+    overflow: hidden;
+    margin: 0px;}
+  .menu > li {
+    width: 100%;
+    text-align: center;
+    line-height: 90px;
+    background-color: #1b5ac2;}
+  .menu a {
+    color: #fff;}
+  .submenu > li {
+    line-height: 50px;
+    background-color: #94a9ff;}
+  .submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;}
+  .menu > li:hover {
+    background-color: #94a9ff;
+    transition-duration: 0.5s;}
+  .menu > li:hover .submenu {
+    height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;}
+  dl{
+    float:left;
+    margin-top: 20px;
+    margin-left:20px;
+    box-sizing: border-box;
+    position:absolute;
+    width : 930px;
+    height : 950px;
+    left:calc(50%-586px/2-427px);
+    top:calc(50%-1024px/2);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  input:-ms-input-placeolder{color:#a8a8a8;}
+  input::-webkit-input-placeholder{color:#a8a8a8;}
+  input::-moz-placeholder{color:#a8a8a8;}
+  h1{
+    height:40px;
+    width:400px;
+    border:1px solid #1b5ac2;
+    background:#ffffff;
+  }
+  input{
+    font-size:16px;
+    width:325px;
+    padding:10px;
+    border:0px;
+    outline:none;
+    float:left;
+  }
+  button{
+    width:50px;
+    height:100%;
+    border:0px;
+    background:#1b5ac2;
+    outline:none;
+    float:right;
+    color:#ffffff;
+  }
+  .line{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color:rgba(0, 0, 0, 0.25);
+    font-size:16px;
+    margin:16px 0px;
+  }
+  .line::before,
+  .line::after{
+    content:"";
+    flex-grow:1;
+    margin:40px 10px;
+    background:rgba(0, 0, 0, 0.25);
+    height:1px;
+    font-size:0px;
+    line-height:0px;
+  }
+  fieldset{
+    box-sizing: border-box;
+    position:absolute;
+    width:1190px;
+    height:900px;
+    left:705px;
+    top:20px;
+    border:none;
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+  }
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="news.css">
+    <title>Zilgiza 페이지</title>
+</head>
+
+<body>
+  <br>
+    <nav id="menubar">
+        
+    <li><b>축제뉴스</b></li>
+        
+    </nav>
+  
+    <hr color="black" size="2px">
+    <br>
+    <section id="container">
+      <div id="box1">
+        <span style="color: blue; "><b>Festival</b></span> News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Date : </b>
+        <span id="current_date"></span>
+          <script>
+          date = new Date();
+          year = date.getFullYear();
+          month = date.getMonth() + 1;
+          day = date.getDate();
+          document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+          </script>
+        <hr>
+        <div id="inbox1">
+          <div id="smallbox1">
+          <img id="ig1" src="ig1.jpg">
+          </div>
+          <div id="smallbox2">
+            <br>
+            <p><a href="https://www.naver.com" target="_blank">[이슈] 한국민속촌 초가집 100여호...</a> </p>
+            <br>
+            <p><a href="https://www.naver.com" target="_blank">[이슈] 제 13회 전국 가양주 주인 선...</a> </p>
+            <br>
+            <p><a href="https://www.naver.com" target="_blank">[이슈] 강화 교동 힐링 2022 강화화개...</a> </p>
+            <br>
+            <p><a href="https://www.naver.com" target="_blank">[이슈] 말레이시아에 한류생활문화한마당...</a> </p>
+            <br>  
+            <p><a href="https://www.naver.com" target="_blank">[이슈] 절임배추 양념김장 사러 가는 제...</a> </p>
+          </div>
+        </div>
+              
+
+        
+      </div>
+      <div id="box2">
+        <span style="color: red; "><b>HOT</b></span> <b>TAG</b>
+        <hr>
+        <p><a href="https://www.naver.com" target="_blank"> 쿨시네마페스티벌</a></p>
+        <p><a href="https://www.naver.com" target="_blank"> 청산도</a></p>
+        <p><a href="https://www.naver.com" target="_blank"> 중국인</a></p>
+        <p><a href="https://www.naver.com" target="_blank"> 콘서트</a></p>
+        <p><a href="https://www.naver.com" target="_blank"> 기부축제</a></p>
+        <p><a href="https://www.naver.com" target="_blank"> 윤봉길</a></p><p>
+        <p><a href="https://www.naver.com" target="_blank"> 경영전략연구</a></p>
+        <p><a href="https://www.naver.com" target="_blank"> 일본</a></p>
+        <p><a href="https://www.naver.com" target="_blank"> 여행객</a></p>
+        <p><a href="https://www.naver.com" target="_blank"> 남해다리</a></p>
+        <p><a href="https://www.naver.com" target="_blank"> 머드축제</a></p>
+
+      </div>
+    </section>
+     <br>
+     <div class="main">
+      <input id="tab1" type="radio" name="tabs" checked> <!--디폴트 메뉴-->
+      <label for="tab1">전체뉴스</label>
+  
+      <input id="tab2" type="radio" name="tabs">
+      <label for="tab2">축제/관광</label>
+  
+      <input id="tab3" type="radio" name="tabs">
+      <label for="tab3">기획/특집</label>
+  
+      <input id="tab4" type="radio" name="tabs">
+      <label for="tab4">인터뷰</label>
+  
+      <article id="content1">
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+      </article>
+  
+      <article id="content2">
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+      </article>
+  
+      <article id="content3">
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[기획/특집] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+      </article>
+  
+      <article id="content4">
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[인터뷰] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+        <div id = "box4">
+          <div id ="inbox3">
+            <a href="https://www.naver.com" target="_blank"><img id ="ig2" src="ig2.jpg"></a>
+          </div>
+          <div id ="inbox4">
+            <br>
+            <p style="color: blue;">[축제/관광] 제 13회 전국 가양주 주인 선발대회 의성군에서 성료</p>
+            <br>
+              우리나라 가양주(家釀酒, 집에서 빚은 술) 주인(酒人)을 선발하는 ‘제13회 전국 가양주 주인(酒人) 선발대회 본선경연’이 의성군 안계면 소재 사회적경제클러스터에서 11월 12일 개최됐다. 이번 대회는 의성군이 주최하고 도농문화콘텐츠연구회가 주관했다.
+              올해로 13회를 맞는 전국 가양주 주인(酒人) 선발대회는 80명의 본선 입상자들이 참여한 가운데 본선 경연이 치러졌다.
+          </div>
+        </div>
+        <hr>
+      </article>
+     </div>
+    <footer>
+        <hr color="black" size="2px">
+        Zilgiza page
+    </footer>
+</body>
+</html>
