@@ -3,22 +3,48 @@
  } 
 footer{
   width: auto;
-  
 }
+*{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:14px}
+.menu {
+  width: 65%;
+  overflow: hidden;
+  margin: 30px auto;}
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;}
+.menu a {
+  color: #fff;}
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;}
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;}
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;}
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;}
 #img1 {
   width: 250px;
 }
-
 #container {
   display: flex;
-  justify-content: space-between;
-  width: 930px;
+  margin-left:auto;
+  margin-right:auto;
+  justify-content: center;
+  width: 70%;
+  align-items: center;
 }
-
 #c2 {
   display: flex;
   justify-content: space-between;
-
 }
 
 #c3{
@@ -33,8 +59,7 @@ footer{
 
 #c5{
   display: flex;
-  flex-direction: column  ;
-  justify-content: center;
+  flex-direction: column ;
   align-items: center;
 }
 #c6{
@@ -61,63 +86,60 @@ footer{
   display: flex;
   justify-content: space-evenly;
 }
-
+#menubar{
+  margin-left:20%;
+}
 
 #main{
-  height: 4800px;
-  width: auto;
+  width: 80%;
+  margin-left:20%;
+  margin-right:auto;
   display: flex;
   justify-content: space-between;
 }
 
 article{
 
-  width: 930px;
+  width: 80%;
 }
 
 
 aside {
   
-  width: 250px;
+  width: 80%;
 }
 
 #box1 {
-  width: 250px;
+  margin-left:10%;
+  width: 30%;
 }
 
 #box2 {
-  width: 530px;
+  margin-left:10%;
+  width: 80%;
 }
 #box3 {
-  
-  width: 150px;
+  margin-left:5%;
+  width: 20%;
 }
-
-
 button {
   margin: 0;
   padding: 0.5rem 1rem;
-  
-
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-
   display: inline-block;
   width: auto;
-
   border: none;
   border-radius: 4px;
   background-color: rgb(147, 198, 243);
   position: right;
 }
-
 a {
   text-decoration-line: none;
 }
-
 #f1{
   width: 110px;
   height: 70px;
@@ -138,15 +160,14 @@ a {
   width: 110px;
   height: 70px;
 }
-
 #t1{
-  width: 930px;
+  width: 70%;
 }
 #t2{
-  width: 930px;
+  width: 70%;
 }
 #t3{
-  width: 930px;
+  width: 70%;
 }
 #m1{
   width: 140px;
