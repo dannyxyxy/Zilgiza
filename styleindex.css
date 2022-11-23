@@ -5,7 +5,9 @@ a{text-decoration:none;font-size:14px}
 .menu {
   width: 90%;
   overflow: hidden;
-  margin: 2% auto;}
+  margin-left: 4%;
+  margin-top:10px;
+}
 .menu > li {
   width: 20%; /*20*5=100%*/
   float: left;
@@ -30,17 +32,18 @@ a{text-decoration:none;font-size:14px}
   float:left;
 }
   .list{
-    margin-left: 40px;
+    margin-left: 4;
     width:750px;
     border-bottom: 1px solid #BBB9B9;
   }
 #scroll{
+  width:28%;
   float:right;
 }
 #carouselExampleControls{
   width:90%;
   height: 300px;
-  margin-left:6%;
+  margin-left:5%;
 }
 .img {float:left;display:block;width:29.67%;max-width:328px;height:200px;padding-left:0;box-sizing:border-box;-webkit-box-sizing:border-box;overflow:hidden;}
 .text {display:inline-block;width:70.33%;max-width:872px;padding-left:25px;box-sizing:border-box;-webkit-box-sizing:border-box;}
