@@ -87,12 +87,13 @@ a{text-decoration:none;font-size:14px}
   justify-content: space-evenly;
 }
 #menubar{
-  margin-left:20%;
+  margin-left:18%;
+  font-size:15px;
 }
 
 #main{
   width: 80%;
-  margin-left:20%;
+  margin-left:18%;
   margin-right:auto;
   display: flex;
   justify-content: space-between;
@@ -105,21 +106,20 @@ article{
 
 
 aside {
-  
   width: 80%;
 }
 
 #box1 {
-  margin-left:10%;
+  margin-left:5%;
   width: 30%;
 }
 
 #box2 {
-  margin-left:10%;
-  width: 80%;
+  margin-left:5%;
+  width: 90%;
 }
 #box3 {
-  margin-left:5%;
+  margin-left:0;
   width: 20%;
 }
 button {
@@ -172,11 +172,9 @@ a {
 #m1{
   width: 140px;
 }
-
 #m2{
   width: 140px;
 }
-
 #u1{
   width: 120px;
   height: 120px;
