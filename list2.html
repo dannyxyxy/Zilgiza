@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <h1>
+    <div id="logo"><a href="index.html"><img src="images/logo.jpg" width="150"></a></div>
+    <div id="searchbar">
+      <input type="text" placeholder="검색어 입력">
+      <button>검색</button>
+    </div>
+  </h1>
+  <ul class="menu">
+    <li>
+      <a href="#">MY</a>
+      <ul class="submenu">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">내정보</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제정보</a>
+      <ul class="submenu">
+        <li><a href="list.html">지역축제</a></li>
+        <li><a href="map.html">축제지도</a></li>
+        <li><a href="calendar.html">축제일정</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제커뮤니티</a>
+      <ul class="submenu">
+        <li><a href="Community.html">자유게시판</a></li>
+        <li><a href="Event.html">축제 홍보</a></li>
+        <li><a href="Review.html">축제 리뷰</a></li>
+        <li><a href="#">공지사항</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="news.html">전체뉴스</a>
+      <ul class="submenu">
+        <li><a href="news.html">축제/관광</a></li>
+        <li><a href="news.html">기획/특집</a></li>
+        <li><a href="news.html">인터뷰</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">MENU5</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+  </ul>
+  
+</head>
+<style>
+#logo{
+  display:inline-block;
+  margin-left:34%;
+}
+*{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:14px}
+.menu {
+  width: 70%;
+  overflow: hidden;
+  margin: 30px auto;}
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;}
+.menu a {
+  color: #fff;}
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;}
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;}
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;}
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;}
+  input:-ms-input-placeolder{color:#a8a8a8;}
+  input::-webkit-input-placeholder{color:#a8a8a8;}
+  input::-moz-placeholder{color:#a8a8a8;}
+  #searchbar{
+    height:40px;
+    width:400px;
+    border:1px solid #5778ff;
+    background:#ffffff;
+    margin:3%;
+    display:inline-block;
+  }
+  input{
+    font-size:16px;
+    width:325px;
+    padding:10px;
+    border:0px;
+    outline:none;
+    float:left;
+  }
+  button{
+    width:50px;
+    height:100%;
+    border:0px;
+    background:#5778ff;
+    outline:none;
+    float:right;
+    color:#ffffff;
+  }
+#title{
+  margin-left:15%;
+  font-size:22px;
+}
+.list{
+  width:70%;
+  margin-left:15%;
+  margin-top:2%;
+  border-bottom: 1px solid #BBB9B9;
+}
+.img {float:left;display:block;width:29.67%;max-width:328px;height:200px;padding-left:28px;box-sizing:border-box;-webkit-box-sizing:border-box;overflow:hidden;}
+.text {display:inline-block;width:70.33%;max-width:872px;padding-left:25px;box-sizing:border-box;-webkit-box-sizing:border-box;}
+.text .title {padding-bottom:20px;color:#222;font-size:22px;font-weight:500;line-height:1.5em;letter-spacing:-1px;}
+.text .title .date {padding:0 0 0 10px;color:#555;font-weight:normal;letter-spacing:0;}
+.text .ny {display:-webkit-box;width:100%;height:50px;line-height:25px;letter-spacing:-0.8px;overflow:hidden;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.text .ny {height:auto;}
+.text .detail_info {padding-top:25px;}
+.text .detail_info li {position:relative;width:100%;padding-left:12px;letter-spacing:-0.8px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;box-sizing:border-box;}
+.text .detail_info li:before {content:"";position:absolute;top:50%;left:0;width:4px;height:4px;margin-top:-2px;background:#726c6c;}
+.text .detail_info li:not(:last-child) {margin-bottom:10px;}
+.page-nation li{
+  list-style:none;
+}
+.page-wrap{
+  text-align:center;
+  font-size:0;
+}
+.page-nation{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+.page-nation a{
+  display:block;
+  margin:0 3px;
+  float:left;
+  border:1px solid #e6e6e6;
+  width:28px;
+  height:28px;
+  line-height: 28px;
+  text-align:center;
+  background-color: white;
+  font-size:13px;
+  color:black;
+  text-decoration: none;
+  font-weight:bold;
+}
+.page-nation a:hover{
+  background-color:#94a9ff;
+  color:white;
+}
+</style>
+<body>
+  <h2 id="title">
+    | 지역축제
+  </h2>
+  <ul class="list">
+      <li>
+        <a href="f1.html"><img class="img" src="images/fmain5.jpg" art="코리아드라마페스티벌"></a>
+        <div class="text">
+          <p class="title"><strong>2022 정신건강축제 - 내 마음을 가꾸는 정원</strong></p>
+          <div class="ny">정신건강의학과 의사들이 직접 만든 의학 정보 콘텐츠 자료 전산화.
+내 마음을 가꾸는 정원에서 마음 치유 방법을 찾아보자.
+          </div>
+          <ul class="detail_info">
+            <li>기간 : 2022. 10. 4. ~ 12. 31.</li>
+            <li>장소 : 서울시 서초구</li>
+            <li>문의 :  02-3272-2334</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="list">
+      <li href="#">
+        <a href="f2.html"><img class="img" src="images/fmain6.jpg"art="나노피아"></a>
+        <div class="text">
+          <p class="title"><strong>부산국제광고제</strong></p>
+          <div class="ny">부산국제광고제는 아시아 최대 규모이자 국내 유일의 국제광고제이다.
+‘세상을 바꾸는 창조적인 솔루션을 공유’ 하는 마케팅 ∙ 광고 ∙ 디지털 콘텐츠 관련 국제 행사로써, 광고인 만이 즐기는 행사를 넘어 창의력과 아이디어를 가진 일반인도 함께하는 전 세계인의 축제로 자리 매김했다.
+
+2022 부산국제광고제는 MAD(세상을 바꿀 기상천외한 아이디어를 찾아라)를 주제로 오는 8월 25일(목)부터 8월 27일(토)까지 부산 벡스코 및 해운대 일원과 온라인 페스티벌 누리집에서 개최된다.
+          </div>
+          <ul class="detail_info">
+            <li>기간 : 2022. 1. 1. ~ 12. 31.</li>
+            <li>장소 : 부산시 해운대구</li>
+            <li>문의 :  051-623-5539</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="list">
+      <li href="#">
+        <a href="f3.html"><img class="img" src="images/fmain7.jpg" art="경기마을미디어축제"></a>
+        <div class="text">
+          <p class="title"><strong>제34회 춘천인형극제</strong></p>
+            <div class="ny">올해로 34회째를 맞이하는 춘천인형극제는 다양한 인형극 문화예술프로그램을 제공하며, 인형극 장르의 확산과 발전을 위해 다양하고 구체적인 분산개최형 문화예술축제를 개최한다.
+올해는 국내뿐만 아니라 세계 각국의 인형극단들이 참가하는 아시아 최대 인형극 축제로 진행되며 1년 내내 춘천인형극장과 춘천시 일대 곳곳에서 개성 넘치는 4계절 축제로 찾아갈 예정이다.
+            </div>
+           <ul class="detail_info">
+            <li>기간 : 2022. 4. 1. ~ 12. 31. / 축제별 상이/분산개최</li>
+            <li>장소 : 강원도 춘천시</li>
+            <li>문의 : 033-242-8452</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="list">
+      <li href="#">
+        <a href="f4.html"><img class="img" src="images/fmain8.jpg" art="로컬페스타"></a>
+        <div class="text">
+          <p class="title"><strong>안산별빛마을</strong></p>
+          <div class="ny"><2022 안산별빛마을 애니멀 & 하트빌리지 빛축제>
+고속도로 변에 한적하게 위치한 도심 속 숲에는 별빛이 내린 빛의 정원과 200여 마리의 실사이즈 동물 조형물들, 그리고 사랑하는 사람들과 추억을 남길 수 있는 포토존들로 가득하다.</div>
+          <ul class="detail_info">
+            <li>기간 : 2022. 1. 1. ~ 12. 31. / 평일 15:00~23:00 / 공휴일·주말 15:00~23:00</li>
+            <li>장소 : 경기도 안산시</li>
+            <li>문의 : 031-484-5050</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="page-warp">
+      <ul class="page-nation">
+        <li><a href="list.html">1</a></li>
+        <li><a href="list2.html">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
+</body>
+</html>
