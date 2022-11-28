@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link href='node_modules\fullcalendar\main.css' rel='stylesheet' />
+    <script src='node_modules\fullcalendar\main.js'></script>
+    <center><a href="index.html"><img src="images/logo.jpg" width="150"></a></center>
+  <ul class="menu">
+    <li>
+      <a href="#">MY</a>
+      <ul class="submenu">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">내정보</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제정보</a>
+      <ul class="submenu">
+        <li><a href="list.html">지역축제</a></li>
+        <li><a href="map.html">축제지도</a></li>
+        <li><a href="calendar1.html">축제일정</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제커뮤니티</a>
+      <ul class="submenu">
+        <li><a href="Community.html">자유게시판</a></li>
+        <li><a href="Event.html">축제 홍보</a></li>
+        <li><a href="Review.html">축제 리뷰</a></li>
+        <li><a href="#">공지사항</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제마케팅</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="calendar1.html">축제달력</a>
+    </li>
+  </ul>
+  </head>
+
+<style>
+  *{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:14px}
+.menu {
+  width: 60%;
+  overflow: hidden;
+  margin-left: 20%;
+  margin-top:10px;
+}
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;}
+.menu a {
+  color: #fff;}
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;}
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;}
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;}
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;}
+  h2{
+    margin-left:20%;
+  }
+   html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  #calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+  }
+</style>
+
+<body>
+  <h2></br>| 축제달력</br></h2>
+  <div id='calendar'></div>
+<script>
+var colorCode = "#" + Math.round(Math.random() * 0xffffff).toString(16);
+
+// 랜덤 색상 코드
+let randomBrightColor = () => {
+let color_r = Math.floor(Math.random() * 127 + 128).toString(16);
+let color_g = Math.floor(Math.random() * 127 + 128).toString(16);
+let color_b = Math.floor(Math.random() * 127 + 128).toString(16);
+return `#${color_r+color_g+color_b}`;
+}
+
+  document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    initialDate: '2022-11-07',
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,timeGridWeek,timeGridDay'
+    },
+    events: [
+      {
+        title: '제주국제관악제',
+        color: randomBrightColor(),
+        start: '2022-11-18',
+        end: '2022-11-21'
+      },
+      {
+        title: '제7회 서울커피페스티벌 ',
+        color: randomBrightColor(),
+        start: '2022-11-23',
+        end: '2022-11-26'
+      },
+
+      {
+        groupId: '999',
+        title: '성남 e스포츠 페스티벌',
+        color: randomBrightColor(),
+        start: '2022-11-09' //시간
+      },
+      {
+        title: '고성 가리비 수산물 축제',
+        color: randomBrightColor(),
+        // display : "background", 칸 전체가 색칠되는 코드
+        start: '2022-12-01',
+        end: '2022-12-09'
+      },
+      {
+        groupId: '1011',
+        title: '경기전 수문장 교대의식',
+        color: randomBrightColor(),
+        //color : "#A2E1C6",
+        start: '2022-09-17',
+        end: '2022-12-10',
+        
+      },
+      {
+        title: '제5회 아동이 주인공인 행복한 축제',
+        color: randomBrightColor(),
+        start: '2022-12-17',
+      },
+      {
+        title: '2022 서울빛초롱축제',
+        color: randomBrightColor(),
+        start: '2022-12-16',
+        end: '2022-12-31'
+      },
+      {
+        title: '2022 정신건강 축제',
+        color: randomBrightColor(),
+        start: '2022-10-04',
+        end: '2022-12-31'
+      },
+      {
+        title: '서울라이트 DDP',
+        color: randomBrightColor(),
+        start: '2022-12-16',
+        end: '2023-01-01'
+      },
+      /*
+      시간, url 넣는 방법
+      {
+        title: 'Meeting',
+        start: '2022-11-12T10:30:00',
+        end: '2022-11-12T12:30:00'
+      },
+      {
+        title: 'Lunch',
+        start: '2022-11-12T12:00:00'
+      },
+      {
+        title: 'Meeting',
+        start: '2022-11-12T14:30:00'
+      },
+      {
+        title: 'Birthday Party',
+        start: '2022-11-13T07:00:00'
+      },
+      {
+        title: 'Click for Google',
+        url: 'http://google.com/',
+        start: '2022-11-28'
+      }
+      */ 
+    ]
+  }
+);
+
+  calendar.render();
+});
+</script>
+  
+</body>
+
+
+</html>
+
