@@ -8,9 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/Notice.css">
+  <link rel="stylesheet" href="css/Notice_view.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <script src="js/NewEvent.js"></script>
   <div class="container">
     <header class="blog-header lh-1 py-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
@@ -52,16 +53,16 @@
         <li><a href="Community.html">자유게시판</a></li>
         <li><a href="Event.html">축제 홍보</a></li>
         <li><a href="Review.html">축제 리뷰</a></li>
-        <li><a href="Notice.html">공지사항</a></li>
+        <li><a href="#">submenu04</a></li>
         <li><a href="#">submenu05</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#">축제마케팅</a>
+   <li>
+      <a href="#">전체뉴스</a>
       <ul class="submenu">
-        <li><a href="#">submenu01</a></li>
-        <li><a href="#">submenu02</a></li>
-        <li><a href="#">submenu03</a></li>
+        <li><a href="news.html">축제/관광</a></li>
+        <li><a href="new.html">기획/특집</a></li>
+        <li><a href="new.html">인터뷰</a></li>
         <li><a href="#">submenu04</a></li>
         <li><a href="#">submenu05</a></li>
       </ul>
@@ -80,73 +81,52 @@
 </head>
 <body>
   
-    <section class="notice">
+    <div class="board_wrap">
+      <section class="notice">
         <div class="page-title">
               <div class="container">
                   <h3>공지사항</h3>
               </div>
           </div>
-         
-        <!-- board list area -->
-          <div id="board-list">
-              <div class="container">
-                  <table class="board-table">
-                      <thead>
-                      <tr>
-                          <th scope="col" class="th-num">번호</th>
-                          <th scope="col" class="th-title">제목</th>
-                          <th scope="col" class="th-date">등록일</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr>
-                          <td>3</td>
-                          <th>
-                            <a href="Notice_View.html">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
-                            <p>테스트</p>
-                          </th>
-                          <td>2022.07.13</td>
-                      </tr>
-      
-                      <tr>
-                          <td>2</td>
-                          <th><a href="Notice_View.html">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                          <td>2022.06.15</td>
-                      </tr>
-      
-                      <tr>
-                          <td>1</td>
-                          <th><a href="Notice_View.html">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                          <td>2022.06.15</td>
-                      </tr>
-                      </tbody>
-                  </table>
-              </div>
-          </div>
-      
-      </section>
   
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center pagination-sm">
-          <li class="page-item">
-            <a class="page-link" style="color: #5778ff;;" href="" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a style="color: #5778ff;;" class="page-link" href="">1</a></li>
-          <li class="page-item"><a style="color:#5778ff;;" class="page-link" href="">2</a></li>
-          <li class="page-item"><a style="color: #5778ff;;" class="page-link" href="">3</a></li>
-          <li class="page-item">
-            <a class="page-link" style="color: #5778ff;;" href="" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    
-    <a href="#" class="jcm-top"><img id="gotop" src="images/topbutton.png" style="margin-bottom: 14%; width: 70%"></a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/top.js"></script>
-
+        <div class="board_view_wrap">
+            <div class="board_view">
+                <div class="title">
+                    [공지사항] 개인정보 처리방침 변경안내처리방침
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>번호</dt>
+                        <dd>3</dd>
+                    </dl>
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd>관리자</dd>
+                    </dl>
+                    <dl>
+                        <dt>작성일</dt>
+                        <dd>2022.07.13</dd>
+                    </dl>
+                    <dl>
+                        <dt>조회</dt>
+                        <dd>33</dd>
+                    </dl>
+                </div>
+                <div class="cont">
+                    개인<br>
+                    정보<br>
+                    유출<br>
+                    조심<br>
+                    해킹<br>
+                    조심<br>
+                    보안<br>
+                    조심
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="Notice.html" class="on">목록</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
