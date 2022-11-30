@@ -41,6 +41,9 @@ a{text-decoration:none;font-size:14px}
     font-weight: normal;
     font-style: normal;
   }
+  .board_wrap{
+    width: 90%;
+  }
   .page-title {
     margin-bottom: 30px;
   }
