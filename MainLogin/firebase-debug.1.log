@@ -1,0 +1,70 @@
+[debug] [2022-11-26T11:48:09.471Z] ----------------------------------------------------------------------
+[debug] [2022-11-26T11:48:09.473Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-26T11:48:09.473Z] CLI Version:   11.16.1
+[debug] [2022-11-26T11:48:09.473Z] Platform:      win32
+[debug] [2022-11-26T11:48:09.473Z] Node Version:  v18.12.0
+[debug] [2022-11-26T11:48:09.475Z] Time:          Sat Nov 26 2022 20:48:09 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-26T11:48:09.475Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-26T11:48:09.532Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-26T11:48:09.533Z] > authorizing via signed-in user (ti9918@gmail.com)
+[debug] [2022-11-26T11:48:09.533Z] [iam] checking project mainlogin-89f84 for permissions ["firebase.projects.get"]
+[debug] [2022-11-26T11:48:09.536Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions [none]
+[debug] [2022-11-26T11:48:09.536Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions x-goog-quota-user=projects/mainlogin-89f84
+[debug] [2022-11-26T11:48:09.536Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-26T11:48:10.345Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions 200
+[debug] [2022-11-26T11:48:10.346Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-26T11:48:10.346Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 [none]
+[debug] [2022-11-26T11:48:10.754Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 200
+[debug] [2022-11-26T11:48:10.754Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 {"projectId":"mainlogin-89f84","projectNumber":"128393916394","displayName":"MainLogin","name":"projects/mainlogin-89f84","resources":{"hostingSite":"mainlogin-89f84","realtimeDatabaseInstance":"mainlogin-89f84-default-rtdb"},"state":"ACTIVE","etag":"1_755fd072-8404-41fd-afb0-301be83bfa58"}
+[info] 
+[info] === Serving from 'C:\Users\User\Desktop\MainLogin'...
+[info] 
+[debug] [2022-11-26T11:48:10.756Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mainlogin-89f84/sites 
+[debug] [2022-11-26T11:48:11.728Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mainlogin-89f84/sites 200
+[debug] [2022-11-26T11:48:11.728Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mainlogin-89f84/sites {"sites":[{"name":"projects/mainlogin-89f84/sites/mainlogin-89f84","defaultUrl":"https://mainlogin-89f84.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-26T11:48:11.729Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84/webApps/-/config [none]
+[debug] [2022-11-26T11:48:12.869Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84/webApps/-/config 200
+[debug] [2022-11-26T11:48:12.869Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84/webApps/-/config {"projectId":"mainlogin-89f84","appId":"1:128393916394:web:5b1dce093d542e70948c93","databaseURL":"https://mainlogin-89f84-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"mainlogin-89f84.appspot.com","apiKey":"AIzaSyB7zjmoTd1h3y_stZPq4Ys891Xk2rJXp3I","authDomain":"mainlogin-89f84.firebaseapp.com","messagingSenderId":"128393916394","measurementId":"G-N8XSSSV07M"}
+[debug] [2022-11-26T11:48:12.877Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 [none]
+[debug] [2022-11-26T11:48:13.258Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 200
+[debug] [2022-11-26T11:48:13.258Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 {"projectId":"mainlogin-89f84","projectNumber":"128393916394","displayName":"MainLogin","name":"projects/mainlogin-89f84","resources":{"hostingSite":"mainlogin-89f84","realtimeDatabaseInstance":"mainlogin-89f84-default-rtdb"},"state":"ACTIVE","etag":"1_755fd072-8404-41fd-afb0-301be83bfa58"}
+[info] i  hosting[mainlogin-89f84]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[mainlogin-89f84]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [26/Nov/2022:11:48:15 +0000] "GET / HTTP/1.1" 200 648 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Nov/2022:11:48:15 +0000] \"GET / HTTP/1.1\" 200 648 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [26/Nov/2022:11:48:15 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:5002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Nov/2022:11:48:15 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://localhost:5002/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-26T11:51:43.484Z] ----------------------------------------------------------------------
+[debug] [2022-11-26T11:51:43.485Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-11-26T11:51:43.486Z] CLI Version:   11.16.1
+[debug] [2022-11-26T11:51:43.486Z] Platform:      win32
+[debug] [2022-11-26T11:51:43.486Z] Node Version:  v18.12.0
+[debug] [2022-11-26T11:51:43.487Z] Time:          Sat Nov 26 2022 20:51:43 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-26T11:51:43.487Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-26T11:51:43.540Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-26T11:51:43.540Z] > authorizing via signed-in user (ti9918@gmail.com)
+[debug] [2022-11-26T11:51:43.540Z] [iam] checking project mainlogin-89f84 for permissions ["firebase.projects.get"]
+[debug] [2022-11-26T11:51:43.543Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions [none]
+[debug] [2022-11-26T11:51:43.543Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions x-goog-quota-user=projects/mainlogin-89f84
+[debug] [2022-11-26T11:51:43.543Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-26T11:51:44.359Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions 200
+[debug] [2022-11-26T11:51:44.359Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mainlogin-89f84:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-26T11:51:44.360Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 [none]
+[debug] [2022-11-26T11:51:44.771Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 200
+[debug] [2022-11-26T11:51:44.771Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 {"projectId":"mainlogin-89f84","projectNumber":"128393916394","displayName":"MainLogin","name":"projects/mainlogin-89f84","resources":{"hostingSite":"mainlogin-89f84","realtimeDatabaseInstance":"mainlogin-89f84-default-rtdb"},"state":"ACTIVE","etag":"1_e04ad103-d386-4a0a-95ec-2b450b84205d"}
+[info] 
+[info] === Serving from 'C:\Users\User\Desktop\MainLogin'...
+[info] 
+[debug] [2022-11-26T11:51:44.773Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mainlogin-89f84/sites 
+[debug] [2022-11-26T11:51:45.548Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mainlogin-89f84/sites 200
+[debug] [2022-11-26T11:51:45.548Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mainlogin-89f84/sites {"sites":[{"name":"projects/mainlogin-89f84/sites/mainlogin-89f84","defaultUrl":"https://mainlogin-89f84.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-26T11:51:45.548Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84/webApps/-/config [none]
+[debug] [2022-11-26T11:51:46.623Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84/webApps/-/config 200
+[debug] [2022-11-26T11:51:46.623Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84/webApps/-/config {"projectId":"mainlogin-89f84","appId":"1:128393916394:web:5b1dce093d542e70948c93","databaseURL":"https://mainlogin-89f84-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"mainlogin-89f84.appspot.com","apiKey":"AIzaSyB7zjmoTd1h3y_stZPq4Ys891Xk2rJXp3I","authDomain":"mainlogin-89f84.firebaseapp.com","messagingSenderId":"128393916394","measurementId":"G-N8XSSSV07M"}
+[debug] [2022-11-26T11:51:46.630Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 [none]
+[debug] [2022-11-26T11:51:47.030Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 200
+[debug] [2022-11-26T11:51:47.030Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mainlogin-89f84 {"projectId":"mainlogin-89f84","projectNumber":"128393916394","displayName":"MainLogin","name":"projects/mainlogin-89f84","resources":{"hostingSite":"mainlogin-89f84","realtimeDatabaseInstance":"mainlogin-89f84-default-rtdb"},"state":"ACTIVE","etag":"1_e04ad103-d386-4a0a-95ec-2b450b84205d"}
+[info] i  hosting[mainlogin-89f84]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[mainlogin-89f84]: Local server: http://localhost:5003 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5003\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [26/Nov/2022:11:51:49 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Nov/2022:11:51:49 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [26/Nov/2022:11:51:49 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://localhost:5003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Nov/2022:11:51:49 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://localhost:5003/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
