@@ -47,7 +47,8 @@ a{text-decoration:none;font-size:14px}
     border-radius: 1em;
   }
   .board_wrap{
-    width: 70%;
+    width: 80%;
+    margin: auto;
   }
   section{
     margin: 0 7%;
