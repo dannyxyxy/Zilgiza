@@ -146,9 +146,9 @@
           <section id="c5">
               <div><button>알림서비스</button></div>
               <br>
-              <div><button>주소 복사</button></div>
+              <div><button><a href="#" onclick="clip(); return false;">URL주소복사</a></button></div>
               <br>
-              <div><button>리뷰 등록</button></div>
+              <div><button><a href="NewCommunity.html">리뷰 등록</a></button></div>
               <br>
               <div><button>사진 등록</button></div>
           </section>
@@ -183,5 +183,21 @@
         </article>
         
     </section>
+  <script type="text/javascript">
+
+      function clip(){
+      
+        var url = '';
+        var textarea = document.createElement("textarea");
+        document.body.appendChild(textarea);
+        url = window.document.location.href;
+        textarea.value = url;
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        alert("URL이 복사되었습니다.")
+      }
+      
+      </script>
 </body>
 </html>
