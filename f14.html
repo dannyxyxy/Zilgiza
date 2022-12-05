@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zlgiza</title>
+  <link rel="stylesheet" href="f1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <center><a href="index.html"><img src="images/logo.jpg" width="150"></a></center>
+  <ul class="menu">
+    <li>
+      <a href="#">MY</a>
+      <ul class="submenu">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">내정보</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제정보</a>
+      <ul class="submenu">
+        <li><a href="list.html">지역축제</a></li>
+        <li><a href="map.html">축제지도</a></li>
+        <li><a href="calendar.html">축제일정</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제커뮤니티</a>
+      <ul class="submenu">
+        <li><a href="Community.html">자유게시판</a></li>
+        <li><a href="Event.html">축제 홍보</a></li>
+        <li><a href="Review.html">축제 리뷰</a></li>
+        <li><a href="#">공지사항</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">전체뉴스</a>
+      <ul class="submenu">
+        <li><a href="news.html">축제/관광</a></li>
+        <li><a href="new.html">기획/특집</a></li>
+        <li><a href="new.html">인터뷰</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">MENU5</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+  </ul>
+</head>
+<body>
+<style>
+  *{padding:0;margin:0}
+  li{list-style:none}
+  a{text-decoration:none;font-size:14px}
+  .menu {
+    width: 90%;
+    overflow: hidden;
+    margin: 30px auto;}
+  .menu > li {
+    width: 20%; /*20*5=100%*/
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #5778ff;}
+  .menu a {
+    color: #fff;}
+  .submenu > li {
+    line-height: 50px;
+    background-color: #94a9ff;}
+  .submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;}
+  .menu > li:hover {
+    background-color: #94a9ff;
+    transition-duration: 0.5s;}
+  .menu > li:hover .submenu {
+    height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;}
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="f1.css">
+    <title>Zilgiza 페이지</title>
+</head>
+
+<body>
+  <br>
+    <nav id="menubar">
+        
+    <h3>| 축제 정보</h3><br><br>
+        
+    </nav>
+  
+    <section id="container">
+      <div id="box1">
+          <img id ="img1" src="images/fmain14.jpg">
+      </div>
+      <div id="box2">
+          <section id="c2">
+          <h3>|퍼스트가든 빛축제</h3>
+            
+          <div><button>D-Day | 4일전</button></div>
+          </section>
+          <hr>
+          기간 : 2022. 1. 1. ~ 12. 31. / 일몰후 ~ 오후 10:00
+          <br>
+          장소 : 경기도 파주시
+          <br>
+          주최 : 퍼스트가든
+          <br>
+          요금 : 주말 및 공휴일-대인 12,000원/ 소인 11,000원 / 평일- 대인 9,000원/ 소인 8,000원
+          <br>
+          문의전화 : 031-957-6861
+          <br>
+          공식사이트 : <a href="http://www.firstgarden.co.kr">http://www.firstgarden.co.kr</a>
+          <br>
+          분류 : 기타 
+          <br>
+          태그 : 기타
+          <p></p>
+          <hr>
+          <section id="c3">
+              <div><strong>오늘</strong><br>최고 최저</div>
+              <div><strong>내일</strong><br> 최고 최저</div>
+              <div><strong>모레</strong><br> 최고 최저</div>
+              </section>
+      </div>
+      <div id="box3">
+          <section id="c4">
+              <div><button>인쇄</button></div>
+              <div><button>보관</button></div>
+          </section>
+          <br>
+          <section id="c5">
+              <div><button>알림서비스</button></div>
+              <br>
+              <div><button><a href="#" onclick="clip(); return false;">URL주소복사</a></button></div>
+              <br>
+              <div><button><a href="NewCommunity.html">리뷰 등록</a></button></div>
+              <br>
+              <div><button>사진 등록</button></div>
+          </section>
+      </div>     
+        
+    </section>
+
+
+    <section id ="main">
+        <article>
+            
+            <hr>
+            <p></p>
+            <strong>소개</strong>
+            <hr>
+            <h2><br>퍼스트가든 빛축제</h2><br><br>
+            <p>퍼스트가든은 아름다운 조명으로 정원을 장식한 별빛축제를 365일 연중무휴 운영한다. 자수화단의 환상적인 별빛, 토스카나 광장의 이국적인 별빛, 로즈가든의 정열적인 별빛은 추위로 얼어붙은 겨울밤을 녹이고 로맨틱한 겨울밤 분위기를 자아낸다.
+
+[별빛이 흐르는 정원]을 슬로건으로 은하수를 담은 별자리 여행처럼 더 화려하고 볼거리가 많은 별빛축제로 새롭게 모습을 선보이며, 약 2만평 규모의 테마정원마다 다른 주제로 사계절의 대표 별자리를 비롯한 다양한 별자리가 지상에 내려앉은 모습을 볼 수 있다.
+
+퍼스트가든 별빛축제는 4계절을 담아낸 다양한 별자리정원 뿐만 아니라 생명과 희망을 담은 ‘바오밥’나무 별빛, 나비정원 별빛 등 각 테마정원마다 스토리를 담아낸 별빛테마정원과 곳곳마다 별빛황금마차, 별빛아이캐릭터 등 볼거리와 포토존으로 구성하여 연인과 가족들의 눈을 즐겁게 해줄 예정이다.
+
+2020년 퍼스트가든 빛축제에는 작년에 비해 조명이 더 추가되어 더욱 화려한 정원을 뽐내고 있다.
+
+그 외에 퍼스트가든은 자동차극장, 레스토랑, 웨딩홀, 놀이시설, 체험학습, 기프트샵, 사계절 썰매장, 챌린지 코스 등 다양한 편의 시설을 갖추고 있어 이번 겨울, 소중한 이들과 함께 즐거운 추억을 만끽할 수 있습니다. 큰 감동을 주는 아름다운 퍼스트가든 별빛축제로 지금 초대한다.
+            </p>
+
+            <div style="padding:10px;"> </div>
+
+            <center><img id ="t1" src="images/fmain14.jpg"></center>
+            
+            <p></p>
+            <h3><br>| 지도</h3>
+            <hr>
+           <center><div style="font:normal normal 400 12px/normal dotum, sans-serif; width:640px; height:392px; color:#333; position:relative"><div style="height: 360px;"><a href="https://map.kakao.com/?urlX=451508.0&amp;urlY=1183470.0&amp;name=%EA%B2%BD%EA%B8%B0%20%ED%8C%8C%EC%A3%BC%EC%8B%9C&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/e7c375e8d86915c028b2e9739fe45ff254c9f676a3c503b1eeac6319539fcd6a" width="638px" height="358px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EA%B2%BD%EA%B8%B0%20%ED%8C%8C%EC%A3%BC%EC%8B%9C&amp;eX=451508.0&amp;eY=1183470.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a></div></div></div></center>
+
+
+        </article>
+        
+    </section>
+  <script type="text/javascript">
+
+      function clip(){
+      
+        var url = '';
+        var textarea = document.createElement("textarea");
+        document.body.appendChild(textarea);
+        url = window.document.location.href;
+        textarea.value = url;
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        alert("URL이 복사되었습니다.")
+      }
+      
+      </script>
+</body>
+</html>
