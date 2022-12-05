@@ -1,5 +1,15 @@
 
 *{padding:0;margin:0; font-family: 'BBTreeGR';}
+  @font-face {
+    src: url("./font/HancomMalangMalang-Regular.ttf");
+    font-family: "Malang-Regular";
+  }
+  @font-face {
+    font-family: 'BBTreeGR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 li{list-style:none}
 a{text-decoration:none;font-size:14px}
 .menu {
