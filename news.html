@@ -5,168 +5,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
   <title>Zlgiza</title>
   <ul class="menu" style="display:inline-block">
-    <a href="index.html"><img src="images/logo.jpg" width="90"></a> 
-    <li>
-      <a href="#"><center><img src="images/user.png" width="35" style="vertical-align: middle;"></center></a>
-      <ul class="submenu">
-        <li><a href="#">MY</a></li>
-        <li><a href="#">submenu02</a></li>
-        <li><a href="#">submenu03</a></li>
-        <li><a href="#">submenu04</a></li>
-        <li><a href="#">submenu05</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#"><center><img src="images/map-marker.png" width="35" style="vertical-align: middle;"></center></a>
-      <ul class="submenu">
-        <li><a href="list.html">지역축제</a></li>
-        <li><a href="#">축제일정</a></li>
-        <li><a href="#">submenu03</a></li>
-        <li><a href="#">submenu04</a></li>
-        <li><a href="#">submenu05</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#"><center><img src="images/bookmark.png" width="35" style="vertical-align: middle;"></center></a>
-      <ul class="submenu">
-        <li><a href="#">submenu01</a></li>
-        <li><a href="#">submenu02</a></li>
-        <li><a href="#">submenu03</a></li>
-        <li><a href="#">submenu04</a></li>
-        <li><a href="#">submenu05</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#"><center><img src="images/heart.png" width="35" style="vertical-align: middle;"></center></a>
-      <ul class="submenu">
-        <li><a href="#">submenu01</a></li>
-        <li><a href="#">submenu02</a></li>
-        <li><a href="#">submenu03</a></li>
-        <li><a href="#">submenu04</a></li>
-        <li><a href="#">submenu05</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#"><center><img src="images/exit.png" width="35" style="vertical-align: middle;"></center></a>
-      <ul class="submenu">
-        <li><a href="#">submenu01</a></li>
-        <li><a href="#">submenu02</a></li>
-        <li><a href="#">submenu03</a></li>
-        <li><a href="#">submenu04</a></li>
-        <li><a href="#">submenu05</a></li>
-      </ul>
-    </li>
-  </ul>
+    <div id="top">
+    <center><a href="index.html"><img src="images/logo.jpg" width="150"></a></center>
+    <ul class="menu">
+      <li>
+        <a href="#">MY</a>
+        <ul class="submenu">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">내정보</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">축제정보</a>
+        <ul class="submenu">
+          <li><a href="list.html">지역축제</a></li>
+          <li><a href="map.html">축제지도</a></li>
+          <li><a href="calendar1.html">축제일정</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">축제커뮤니티</a>
+        <ul class="submenu">
+          <li><a href="Community.html">자유게시판</a></li>
+          <li><a href="Event.html">축제 홍보</a></li>
+          <li><a href="Review.html">축제 리뷰</a></li>
+          <li><a href="Notice.html">공지사항</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="news.html">전체뉴스</a>
+        <ul class="submenu">
+          <li><a href="news.html">축제/관광</a></li>
+          <li><a href="news.html">기획/특집</a></li>
+          <li><a href="news.html">인터뷰</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="calendar1.html">축제달력</a>
+      </li>
+    </ul>
+  </div>
 </head>
-<body>
-  <dl style="display:inline-block">
-    <section>
-      <from action="http://www.google.com/search" method="GET"> 
-        <h1 class="search">
-          <input type="text" placeholder="검색어 입력">
-          
-        </h1>
-      </from>
-    </section>
-    <style>
-      *{padding:0;margin:0}
-  li{list-style:none}
-  a{text-decoration:none;font-size:14px}
-  .menu {
-    width: 90px;
-    overflow: hidden;
-    margin: 0px;}
-  .menu > li {
-    width: 100%;
-    text-align: center;
-    line-height: 90px;
-    background-color: #1b5ac2;}
-  .menu a {
-    color: #fff;}
-  .submenu > li {
-    line-height: 50px;
-    background-color: #94a9ff;}
-  .submenu {
-    height: 0; /*ul의 높이를 안보이게 처리*/
-    overflow: hidden;}
-  .menu > li:hover {
-    background-color: #94a9ff;
-    transition-duration: 0.5s;}
-  .menu > li:hover .submenu {
-    height: 250px; /*서브메뉴 li한개의 높이 50*5*/
-    transition-duration: 1s;}
-  dl{
-    float:left;
-    margin-top: 20px;
-    margin-left:20px;
-    box-sizing: border-box;
-    position:absolute;
-    width : 930px;
-    height : 950px;
-    left:calc(50%-586px/2-427px);
-    top:calc(50%-1024px/2);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-  input:-ms-input-placeolder{color:#a8a8a8;}
-  input::-webkit-input-placeholder{color:#a8a8a8;}
-  input::-moz-placeholder{color:#a8a8a8;}
-  h1{
-    height:40px;
-    width:400px;
-    border:1px solid #1b5ac2;
-    background:#ffffff;
-  }
-  input{
-    font-size:16px;
-    width:325px;
-    padding:10px;
-    border:0px;
-    outline:none;
-    float:left;
-  }
-  button{
-    width:50px;
-    height:100%;
-    border:0px;
-    background:#1b5ac2;
-    outline:none;
-    float:right;
-    color:#ffffff;
-  }
-  .line{
-    display: flex;
-    flex-basis: 100%;
-    align-items: center;
-    color:rgba(0, 0, 0, 0.25);
-    font-size:16px;
-    margin:16px 0px;
-  }
-  .line::before,
-  .line::after{
-    content:"";
-    flex-grow:1;
-    margin:40px 10px;
-    background:rgba(0, 0, 0, 0.25);
-    height:1px;
-    font-size:0px;
-    line-height:0px;
-  }
-  fieldset{
-    box-sizing: border-box;
-    position:absolute;
-    width:1190px;
-    height:900px;
-    left:705px;
-    top:20px;
-    border:none;
-    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
-  }
-    </style>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -180,10 +62,10 @@
     <nav id="menubar">
         
     <li><b>축제뉴스</b></li>
-        
+    <hr color="black" size="2px">
     </nav>
   
-    <hr color="black" size="2px">
+    
     <br>
     <section id="container">
       <div id="box1">
@@ -534,9 +416,5 @@
         <hr>
       </article>
      </div>
-    <footer>
-        <hr color="black" size="2px">
-        Zilgiza page
-    </footer>
 </body>
 </html>
