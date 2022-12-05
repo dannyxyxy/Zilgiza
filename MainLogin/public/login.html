@@ -9,6 +9,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>login</title>
 </head>
+<style>
+    .container{
+        width:30%;
+    }
+    #gojoin{
+        margin-left: 70%;
+    }
+</style>
 <body>
     
    <!-- 네비게이션 바 시작 -->
@@ -23,24 +31,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">즐기자</a>
+            <a href="../../index.html"><img src="../../images/logo.jpg" width="50"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="/">Home</a>
+                <li>
+                    <a id="loginmenu" href="login.html">로그인</a>
                 </li>
                 <li>
-                    <a href="/mypage.html">마이페이지</a>
+                    <a id="joinmenu" href="join.html">가입</a>
                 </li>
                 <li>
-                    <a id="joinmenu" href="/join.html">가입</a>
+                    <a href="mypage.html">마이페이지</a>
                 </li>
-                <li>
-                    <a id="loginmenu" href="/login.html">로그인</a>
-                </li>
+                
+                
 
             </ul>
         </div>
@@ -56,7 +63,8 @@
 
 <!-- 가입 폼 시작 -->
 <div class="container">
-    <h1>로그인 해주세요!</h1>
+    <center><a href="../../index.html"><img src="../../images/logo.jpg" width="150"></a>
+    <h1>로그인 해주세요!</h1></center>
 
     <div class="form-group">
       <label for="email">Email address:</label>
@@ -69,6 +77,7 @@
     </div>
 
     <button type="button" class="btn btn-default login">로그인</button>
+    <button id="gojoin" onclick="location.href='join.html'">방문이 처음이신가요?</button >
 
 </div>
 <!-- 가입 폼 끝 -->
