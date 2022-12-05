@@ -7,7 +7,7 @@
 }
 *{padding:0;margin:0}
 li{list-style:none}
-a{text-decoration:none;font-size:14px}
+#atag{text-decoration:none;font-size:14px; color: rgb(0, 6, 6);}
 .menu {
   width: 90%;
   overflow: hidden;
@@ -19,7 +19,8 @@ a{text-decoration:none;font-size:14px}
   line-height: 40px;
   background-color: #5778ff;}
 .menu a {
-  color: #fff;}
+  text-decoration: none;
+  color: rgb(251, 247, 247);}
 .submenu > li {
   line-height: 50px;
   background-color: #94a9ff;}
@@ -38,15 +39,15 @@ a{text-decoration:none;font-size:14px}
   font-size:22px;
 }
 #menubar{
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 5%;
 }
 #container {
   display: flex;
   justify-content: space-between;
-  width: 70%;
-  margin-left:20%;
-  margin-right:20%;
+  width: 80%;
+  margin-left:15%;  
+  margin-right:15%;
   height: 270px;
   border-color: #74a3ee;
   border-width: thick;
@@ -59,9 +60,9 @@ a{text-decoration:none;font-size:14px}
 }
 
 #box2 {
-  width: 265px;
+  width: 300px;
   background-color: #eef1f6;
-  margin-left:10%;
+
   
 }
 #inbox1{
@@ -72,10 +73,10 @@ a{text-decoration:none;font-size:14px}
 }
 
 #smallbox1{
-  width: 300px;
+  width: 500px;
 }
 #smallbox2{
-  width: 320px; 
+  width: 400px; 
 
 }
 #ig1 {
@@ -91,21 +92,24 @@ a{text-decoration:none;font-size:14px}
   margin: auto;
 }
 #box4{
-  width: 925px;
+  width: 1100px;
   height: 200px;
   display: flex;
   justify-content: space-between;
+  
 }
 
 #inbox3{
   width: 200px;
   height: 200px;
+  
 
 }
 #inbox4{
-  width: 720px;
+  width: 1000px;
   height: 200px;
-  margin-left:10%;
+  margin-left:5%;
+  
 }
 input {
   display: none;}
@@ -138,8 +142,8 @@ input:checked + label {
 display: block;}
 
 .main {
-  margin-left:25%;
-  margin-right:15%;
+  margin-left:15%;
+  margin-right:5%;
 }
 
 article {
