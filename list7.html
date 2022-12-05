@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <h1>
+    <div id="logo"><a href="index.html"><img src="images/logo.jpg" width="150"></a></div>
+    <div id="searchbar">
+      <input type="text" placeholder="검색어 입력">
+      <button>검색</button>
+    </div>
+  </h1>
+  <ul class="menu">
+    <li>
+      <a href="#">MY</a>
+      <ul class="submenu">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">내정보</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제정보</a>
+      <ul class="submenu">
+        <li><a href="list.html">지역축제</a></li>
+        <li><a href="map.html">축제지도</a></li>
+        <li><a href="calendar.html">축제일정</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">축제커뮤니티</a>
+      <ul class="submenu">
+        <li><a href="Community.html">자유게시판</a></li>
+        <li><a href="Event.html">축제 홍보</a></li>
+        <li><a href="Review.html">축제 리뷰</a></li>
+        <li><a href="#">공지사항</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="news.html">전체뉴스</a>
+      <ul class="submenu">
+        <li><a href="news.html">축제/관광</a></li>
+        <li><a href="news.html">기획/특집</a></li>
+        <li><a href="news.html">인터뷰</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">MENU5</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+        <li><a href="#">submenu05</a></li>
+      </ul>
+    </li>
+  </ul>
+  
+</head>
+<style>
+#logo{
+  display:inline-block;
+  margin-left:34%;
+}
+*{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:14px}
+.menu {
+  width: 70%;
+  overflow: hidden;
+  margin: 30px auto;}
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;}
+.menu a {
+  color: #fff;}
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;}
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;}
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;}
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;}
+  input:-ms-input-placeolder{color:#a8a8a8;}
+  input::-webkit-input-placeholder{color:#a8a8a8;}
+  input::-moz-placeholder{color:#a8a8a8;}
+  #searchbar{
+    height:40px;
+    width:400px;
+    border:1px solid #5778ff;
+    background:#ffffff;
+    margin:3%;
+    display:inline-block;
+  }
+  input{
+    font-size:16px;
+    width:325px;
+    padding:10px;
+    border:0px;
+    outline:none;
+    float:left;
+  }
+  button{
+    width:50px;
+    height:100%;
+    border:0px;
+    background:#5778ff;
+    outline:none;
+    float:right;
+    color:#ffffff;
+  }
+#title{
+  margin-left:15%;
+  font-size:22px;
+}
+.list{
+  width:70%;
+  margin-left:15%;
+  margin-top:2%;
+  border-bottom: 1px solid #BBB9B9;
+}
+.img {float:left;display:block;width:29.67%;max-width:328px;height:200px;padding-left:28px;box-sizing:border-box;-webkit-box-sizing:border-box;overflow:hidden;}
+.text {display:inline-block;width:70.33%;max-width:872px;padding-left:25px;box-sizing:border-box;-webkit-box-sizing:border-box;}
+.text .title {padding-bottom:20px;color:#222;font-size:22px;font-weight:500;line-height:1.5em;letter-spacing:-1px;}
+.text .title .date {padding:0 0 0 10px;color:#555;font-weight:normal;letter-spacing:0;}
+.text .ny {display:-webkit-box;width:100%;height:50px;line-height:25px;letter-spacing:-0.8px;overflow:hidden;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.text .ny {height:auto;}
+.text .detail_info {padding-top:25px;}
+.text .detail_info li {position:relative;width:100%;padding-left:12px;letter-spacing:-0.8px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;box-sizing:border-box;}
+.text .detail_info li:before {content:"";position:absolute;top:50%;left:0;width:4px;height:4px;margin-top:-2px;background:#726c6c;}
+.text .detail_info li:not(:last-child) {margin-bottom:10px;}
+.page-nation li{
+  list-style:none;
+}
+.page-wrap{
+  text-align:center;
+  font-size:0;
+}
+.page-nation{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+.page-nation a{
+  display:block;
+  margin:0 3px;
+  float:left;
+  border:1px solid #e6e6e6;
+  width:28px;
+  height:28px;
+  line-height: 28px;
+  text-align:center;
+  background-color: white;
+  font-size:13px;
+  color:black;
+  text-decoration: none;
+  font-weight:bold;
+}
+.page-nation a:hover{
+  background-color:#94a9ff;
+  color:white;
+}
+</style>
+<body>
+  <h2 id="title">
+    | 지역축제
+  </h2>
+  <ul class="list">
+      <li>
+        <a href="f1.html"><img class="img" src="images/fmain21.jpg" art="정신건강축제"></a>
+        <div class="text">
+          <p class="title"><strong>4th ASCOM BLUES FESTIVAL</strong></p>
+          <div class="ny">부평은 미국의 블루스 리듬을 가장 먼저 받아들였고, 미8군 오디션을 통과해 부평 삼릉에서 픽업하던 한국 청년 뮤지션들은 한국인들의 정서를 담아낸 한국적 블루스 리듬을 만들어낸 한국대중음악사에 빛나는 금자탑을 세운 지역이다. 한국 블루스 역사를 개척한 부평에서 그 의미와 가치를 새롭게 하기 위해 ASCOM BLUES FESTIVAL를 개최하고 있다. 
+          </div>
+          <ul class="detail_info">
+            <li>기간 : 2022. 12. 17. / 19:30 - 22:00</li>
+            <li>장소 : 인천시 부평구</li>
+            <li>문의 :   ascomcitymusicartfair@gmail.com</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="list">
+      <li href="#">
+        <a href="f2.html"><img class="img" src="images/fmain22.jpg"art="나노피아"></a>
+        <div class="text">
+          <p class="title"><strong>제35회 해운대 북극곰축제</strong></p>
+          <div class="ny">해운대 북극곰축제는 얼음이 꽁꽁 언 북극해에서도 여유롭게 수영을 즐기는 북극곰처럼 한 겨울 영하의 차가운 날씨에도 바닷물에 뛰어들어 수영을 즐기며 한 해의 건강을 기원하는 행사이다.
+          </div>
+          <ul class="detail_info">
+            <li>기간 : 2022. 12. 23. ~ 24.</li>
+            <li>장소 : 부산시 해운대구</li>
+            <li>문의 :  051-731-1509</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="list">
+      <li href="#">
+        <a href="f3.html"><img class="img" src="images/fmain23.jpg" art="경기마을미디어축제"></a>
+        <div class="text">
+          <p class="title"><strong>코엑스 윈터 페스티벌 (Coex Winter Festival)</strong></p>
+            <div class="ny">올해로 9회차를 맞은 코엑스 윈터 페스티벌은 매해 새해 띠 동물을 조명하는 도심 속 소원성취 페스티벌이다.
+2023년 새해는 검은 토끼의 해인 계묘년이다. 새해를 기념하는 모든 이들에게 행운과 행복 그리고 건강을 기원하며 국내외 다양한 작품 활동을 하고 있는 작가님들과 함께 토끼를 주제로 특별한 전시를 진행한다. 예술 작품을 통해 지난 몇 해 코로나로 지치고 힘들었던 모든 이들에게 희망과 힐링의 메시지를 전달하고, 역동적인 한 해로 채워나갔으면 하는 바람을 담은 페스티벌이다.
+            </div>
+           <ul class="detail_info">
+            <li>기간 : 2022. 12. 19. ~ 25. / 10:00 ~ 19:00</li>
+            <li>장소 : 서울시 강남구</li>
+            <li>문의 : 02-6000-1155</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="list">
+      <li href="#">
+        <a href="f4.html"><img class="img" src="images/fmain24.jpg" art="로컬페스타"></a>
+        <div class="text">
+          <p class="title"><strong>누웨마루 페스티벌 더 크리스마스</strong></p>
+          <div class="ny">누웨마루 거리를 찾아온 산타와 빛나는 트리 아름다운 음악이 흐르는 누웨마루 페스티벌
+지역 상권을 활성화 시키는 다양한 부대 이벤트와 산타가 주는 행운의 선물이 쏟아지는 크리스마스의 선물 같은 페스티벌.</div>
+          <ul class="detail_info">
+            <li>기간 : 2022. 12. 1. ~ 25. / 18:00~22:00</li>
+            <li>장소 : 제주도 제주시</li>
+            <li>문의 : 064-712-8851</li>
+            <P></P>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="page-warp">
+      <ul class="page-nation">
+        <li><a href="list.html">1</a></li>
+        <li><a href="list2.html">2</a></li>
+        <li><a href="list3.html">3</a></li>
+        <li><a href="list4.html">4</a></li>
+        <li><a href="list5.html">5</a></li>
+        <li><a href="list6.html">6</a></li>
+        <li><a href="list7.html">7</a></li>
+        <li><a href="list8.html">8</a></li>
+      </ul>
+    </div>
+</body>
+</html>
