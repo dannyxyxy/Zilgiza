@@ -42,7 +42,8 @@ a{text-decoration:none;font-size:14px}
     font-style: normal;
   }
   .board_wrap{
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
   .page-title {
     margin-bottom: 30px;
